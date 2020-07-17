@@ -1,0 +1,148 @@
+@import 'config';
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Open Sans;
+    max-width: 1440px;
+    margin:auto;
+    color: $primary-dark;
+    overflow-x: hidden;      
+
+    .container{
+        width:100%;
+    }
+
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px;
+        padding-top: 50px;
+
+        img{
+            width:70%;
+        }
+
+        ul{
+            list-style: none;
+            font-family: Raleway;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            li{
+                margin-left: 35px;
+            }
+
+            a{
+                text-decoration: none;
+                color: $primary-dark;
+                
+                &:hover{
+                    color: $accent-cyan;
+                }
+            }
+        }
+    }
+
+
+    .hero{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        margin-top: 50px;
+        align-items: center;
+        padding: 0 50px;
+
+        &-illustration{
+            img{
+                width: 400px;
+            }
+        }
+
+        &-content{
+            h1{
+                font-family: Raleway;
+                font-size: 30px;
+                font-weight: 900;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 13px;
+                display: inline-block;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            .cta-input{
+                input{
+                    font-family: Open Sans;
+                    font-size: 11px;
+                    padding: 9px 15px;
+                    width: 225px;
+
+                    &::placeholder{
+                        color:$neutral-gray;
+                    }
+                }
+
+                .button-cta{
+                    color: $neutral-blue;
+                    font-size: 11px;
+                    padding: 11px 15px;
+                    border: none;
+                    background: $accent-blue;
+                    border: $accent-blue;
+                    width: 150px;
+                    border-radius: 3px;
+                    transform: scale(1.09);
+                    margin-left: 15px;
+                    box-shadow: 3px 3px 0 0 $neutral-blue;
+
+                    &:hover{
+                        cursor: pointer;
+                        transform: scale(1.05);;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .about{
+        margin-top: 50px;
+        
+        .background{
+            height: 75px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-container{
+            padding: 0 50px;
+            padding-top: 50px;
+            background: $neutral-blue;
+
+            .about-content{
+                h1{
+                    font-size: 30px;
+                    font-weight: 900;
+                    font-family: Raleway;
+                    margin-bottom: 20px;
+                }
+
+                p{
+                    width:50%;
+                }
+            }
+
+        }
+    }
+}
+
+
+
